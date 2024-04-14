@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order Form</title>
+</head>
+<body>
+  <h1>Place Your Food Order</h1>
+  <form action="/deliveries" method="POST">
+    <label for="name">Package Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+      <option value="Pending">Pending</option>
+      <option value="Delivered">Delivered</option>
+    </select><br><br>
+    <label>Food Items:</label><br>
+    <input type="checkbox" id="burger" name="food" value="Burger">
+    <label for="burger">Burger</label><br>
+    <input type="checkbox" id="pizza" name="food" value="Pizza">
+    <label for="pizza">Pizza</label><br>
+    <input type="checkbox" id="salad" name="food" value="Salad">
+    <label for="salad">Salad</label><br><br>
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+</html>
